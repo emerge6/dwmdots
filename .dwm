@@ -1,0 +1,14 @@
+setxkbmap -layout us,ru -option grp:win_space_toggle
+slstatus &
+picom -b --animations --vsync
+hsetroot -fill /home/m/wm/IMG_0392.PNG
+flameshot &
+udiskie -a &
+killall pipewire pipewire-pulse wireplumber
+sleep 2
+gentoo-pipewire-launcher &
+
+while true
+do
+	dwm &> /dev/null
+done
